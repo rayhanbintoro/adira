@@ -40,4 +40,47 @@
     background: #4CAF50;
     cursor: pointer;
   }
+
+  .wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
+
+table {
+    font-family: arial, sans-serif;
+    width: 70%;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td,
+th {
+    text-align: middle;
+    border: 2px solid #dddddd;
+    padding: 8px;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+    border: 2px solid black;
+
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+    border: 2px solid black;
+
+}
   
