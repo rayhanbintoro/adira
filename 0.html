@@ -146,7 +146,7 @@ crossorigin="anonymous"></script>
         // output.innerHTML = uang_muka.value;
 
         document.getElementById('uang_muka').max = getRangemax()
-        document.getElementById('uang_muka').value = Math.round( getRangemax() - getRangemin()/2) + getRangemin()   
+        document.getElementById('uang_muka').value = Math.round( (getRangemax() - getRangemin())/2) + getRangemin()   
         document.getElementById('uang_muka').min = getRangemin()
         var uangMukaValue = uang_muka
         var tenorValue = tenor.value
@@ -164,13 +164,13 @@ crossorigin="anonymous"></script>
         }
 
         uang_muka.oninput = function() {
-         uangMukaValue = Number(this.value)
+         uangMukaValue = Number(this.value) * 5
          uangmuka_value_realtime.innerHTML = `Rp. ${uang_muka.value}`
-         output.innerHTML = `Rp. ${Math.round((Number(harga - Number(uangMukaValue)) / Number(tenorValue))).toLocaleString()}`
+         output.innerHTML = `Rp. ${Math.round((Number(harga - Number(uangMukaValue/5)) / Number(tenorValue))).toLocaleString()}`
         }
         
         tenor.oninput = function() {
-            tenorValue = Number(this.value) * 3   
+            tenorValue = Number(this.value) * 3  
             tenor_value_realtime.innerHTML = tenorValue
             output.innerHTML = `Rp. ${Math.round((Number(harga - Number(uangMukaValue)) / Number(tenorValue))).toLocaleString()}` 
         }
