@@ -41,5 +41,15 @@
     cursor: pointer;
   }
 
+
+@media(max-width: 768px){
+  .carousel{
+    width: auto !important;
+  }
+  .carousel-image{
+    width: 80% !important;
+    height: 80% !important;
+  }
+}
   
   
