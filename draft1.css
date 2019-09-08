@@ -47,8 +47,10 @@
     width: auto !important;
   }
   .carousel-image{
-    width: 80% !important;
-    height: 80% !important;
+    width: 412px !important;
+    height: 403px !important;
+    /* width: 412px !important;
+    height: 403px !important; */
   }
 }
   
