@@ -1,145 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="draft1.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="draft1.css" />
 
     <style>
-        .wrapper {
-            text-align: center;
-        }
+      .wrapper {
+        text-align: center;
+      }
 
-        .button {
-            position: absolute;
-            top: 50%;
-        }
+      .button {
+        position: absolute;
+        top: 50%;
+      }
 
-        table {
-            font-family: arial, sans-serif;
-            width: 70%;
-            border: 2px solid black;
-            margin-left: auto;
-            margin-right: auto;
-        }
+      table {
+        font-family: arial, sans-serif;
+        width: 70%;
+        border: 2px solid black;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
-        td,
-        th {
-            text-align: middle;
-            border: 2px solid #dddddd;
-            padding: 8px;
-            font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-            font-size: 14px;
-            font-style: normal;
-            font-variant: normal;
-            font-weight: 400;
-            line-height: 20px;
+      td,
+      th {
+        text-align: middle;
+        border: 2px solid #dddddd;
+        padding: 8px;
+        font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+        font-size: 14px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        line-height: 20px;
+      }
 
-        }
+      tr:nth-child(even) {
+        background-color: #dddddd;
+        border: 2px solid black;
+      }
 
-        tr:nth-child(even) {
-            background-color: #dddddd;
-            border: 2px solid black;
-
-        }
-
-        tr:nth-child(odd) {
-            background-color: #ffffff;
-            border: 2px solid black;
-
-        }
+      tr:nth-child(odd) {
+        background-color: #ffffff;
+        border: 2px solid black;
+      }
     </style>
 
     <script type="text/javascript">
-
-
-        function renderloading(){
-
+      function renderloading() {}
+      function Random() {
+        var number = Math.floor(Math.random() * (4 - 0 + 1)) + 0;
+        if (number == 0) {
+          window.location.href = "0.html";
+        } else if (number == 1) {
+          window.location.href = "1.html";
+        } else if (number == 2) {
+          window.location.href = "2.html";
+        } else if (number == 3) {
+          window.location.href = "3.html";
+        } else if (number == 4) {
+          window.location.href = "4.html";
         }
-        function Random() {
-            var number = Math.floor(Math.random() * (4 - 0 + 1)) + 0;
-            if( number == 0){
-                window.location.href = "0.html"
-            }
-            else if(number == 1){
-                window.location.href = "1.html"
-            }
-            else if(number == 2){
-                window.location.href = "2.html"
-            }
-            else if(number == 3){
-                window.location.href = "3.html"
-            }
-            else if(number == 4){
-                window.location.href = "4.html"
-            }
-            return number
-        }
+        return number;
+      }
 
-        function randomValue() {
-            document.getElementById('tb').value = Random();
-        }
-
-        
+      function randomValue() {
+        document.getElementById("tb").value = Random();
+      }
     </script>
-</head>
+  </head>
 
-
-<header>
+  <header>
     <!-- Image and text -->
-    <nav id='navbar' class="navbar navbar-light" style="background-color: #FEDE00;">
-        <a style="background-color:#FEDE00" class="navbar-brand" href="#">
-            <img src="logo-new.png">
-            Sahabat Setia Selamanya
-        </a>
+    <nav
+      id="navbar"
+      class="navbar navbar-light"
+      style="background-color: #FEDE00;"
+    >
+      <a style="background-color:#FEDE00" class="navbar-brand" href="#">
+        <img src="logo-new.png" />
+        Sahabat Setia Selamanya
+      </a>
     </nav>
-</header>
+  </header>
 
-<body>
-        <tr>
-            <th>
-                <div style="color:#fce903">
-                    <h2 style="text-align: center; font-size:100px">
-                        <img src="AKSES-Adira-Finance.jpg">
-                    </h2>
-                </div>
-
-            </th>
-            <th>
-
-            </th>
-
-        </tr>
+  <body>
     <tr>
-        <center>
-                <button id="button_click" type="button" class="btn btn-primary btn-lg btn-block" onclick="randomValue();">Take a picture</button>
-        </center>
-            
+      <th>
+        <div style="color:#fce903">
+          <h2 style="text-align: center; font-size:100px">
+            <img src="AKSES-Adira-Finance.jpg" />
+          </h2>
+        </div>
+      </th>
+      <th></th>
     </tr>
-    <center>
-            <form name="rn">
-                    <input type="text" id="tb" name="tb" />
-                    </br>
-                  
-                    
-            </form>
-        
-    </center>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-</body>
+    <tr>
+      <center>
+        <button
+          id="button_click"
+          type="button"
+          class="btn btn-primary btn-lg btn-block"
+          onclick="randomValue();"
+        >
+          Take a picture
+        </button>
+      </center>
+    </tr>
 
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
